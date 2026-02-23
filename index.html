@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <div class = "container">
+        <div >
+        <form class = "weather">
+        <h2>Weather Forecast</h2>
+         <input type ="text" placeholder ="Enter your City " >
+          <div><button type="submit">Search</button></div>
+          <div class="error-message" id="errorMsg"></div>
+     </form>
+     </div>
+    </div>
+
+>
+    <div class="weather-card" id="weatherCard" style="display: none;">
+        <div class="weather-header">
+            <h2 id="cityName"></h2>
+            <p id="weatherDesc"></p>
+        </div>
+        <div class="weather-main">
+            <div class="temp-section">
+                <span id="temperature"></span>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="detail-item">
+                <span class="detail-label">Feels Like</span>
+                <span class="detail-value" id="feelsLike"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Humidity</span>
+                <span class="detail-value" id="humidity"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Wind Speed</span>
+                <span class="detail-value" id="windSpeed"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Pressure</span>
+                <span class="detail-value" id="pressure"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Visibility</span>
+                <span class="detail-value" id="visibility"></span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">UV Index</span>
+                <span class="detail-value" id="uvIndex"></span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+
+</html>
